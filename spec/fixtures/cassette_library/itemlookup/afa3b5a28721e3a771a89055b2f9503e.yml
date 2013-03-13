@@ -1,0 +1,26 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ecs.amazonaws.com:80/onca/xml?AWSAccessKeyId=0ZVSQ33MDFPQS8H2PM02&AssociateTag=theorydot08-20&IdType=ASIN&ItemId=0394751221&Operation=ItemLookup&ResponseGroup=Images&Service=AWSECommerceService&Signature=diPZk16R+T2mlTVfDocksPwDefkxOcAzEN2tYPADAQA=&Timestamp=2011-07-29T18:46:19Z&Version=2011-08-01
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Fri, 29 Jul 2011 18:46:20 GMT
+      server: 
+      - Server
+      content-type: 
+      - text/xml;charset=UTF-8
+      vary: 
+      - Accept-Encoding,User-Agent
+      nncoection: 
+      - close
+      transfer-encoding: 
+      - chunked
+    body: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01"><OperationRequest><RequestId>2919506d-e7ed-4f67-a863-d3a1b2ca7809</RequestId><Arguments><Argument Name="Operation" Value="ItemLookup"></Argument><Argument Name="Service" Value="AWSECommerceService"></Argument><Argument Name="ItemId" Value="0394751221"></Argument><Argument Name="IdType" Value="ASIN"></Argument><Argument Name="AWSAccessKeyId" Value="0ZVSQ33MDFPQS8H2PM02"></Argument><Argument Name="Timestamp" Value="2011-07-29T18:46:19Z"></Argument><Argument Name="Signature" Value="diPZk16R+T2mlTVfDocksPwDefkxOcAzEN2tYPADAQA="></Argument><Argument Name="ResponseGroup" Value="Images"></Argument><Argument Name="AssociateTag" Value="theorydot08-20"></Argument><Argument Name="Version" Value="2011-08-01"></Argument></Arguments><RequestProcessingTime>0.0225040000000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>0394751221</ItemId><ResponseGroup>Images</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>0394751221</ASIN><SmallImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL._SL75_.jpg</URL><Height Units="pixels">75</Height><Width Units="pixels">49</Width></SmallImage><MediumImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL._SL160_.jpg</URL><Height Units="pixels">160</Height><Width Units="pixels">104</Width></MediumImage><LargeImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL.jpg</URL><Height Units="pixels">500</Height><Width Units="pixels">324</Width></LargeImage><ImageSets><ImageSet Category="primary"><SwatchImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL._SL30_.jpg</URL><Height Units="pixels">30</Height><Width Units="pixels">19</Width></SwatchImage><SmallImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL._SL75_.jpg</URL><Height Units="pixels">75</Height><Width Units="pixels">49</Width></SmallImage><ThumbnailImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL._SL75_.jpg</URL><Height Units="pixels">75</Height><Width Units="pixels">49</Width></ThumbnailImage><TinyImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL._SL110_.jpg</URL><Height Units="pixels">110</Height><Width Units="pixels">71</Width></TinyImage><MediumImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL._SL160_.jpg</URL><Height Units="pixels">160</Height><Width Units="pixels">104</Width></MediumImage><LargeImage><URL>http://ecx.images-amazon.com/images/I/41RbE1XoSwL.jpg</URL><Height Units="pixels">500</Height><Width Units="pixels">324</Width></LargeImage></ImageSet></ImageSets></Item></Items></ItemLookupResponse>
+    http_version: "1.1"

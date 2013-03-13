@@ -1,0 +1,26 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ecs.amazonaws.com:80/onca/xml?AWSAccessKeyId=0ZVSQ33MDFPQS8H2PM02&AssociateTag=theorydot08-20&Item.1.OfferListingId=foobar&Item.1.Quantity=1&Operation=CartCreate&Service=AWSECommerceService&Signature=Tl8LhXJEQ84qUFIL4+o1bBNZkEr5pOohFaZFHco7QUc=&Timestamp=2011-07-29T18:55:58Z&Version=2011-08-01
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Fri, 29 Jul 2011 18:55:58 GMT
+      server: 
+      - Server
+      content-type: 
+      - text/xml;charset=UTF-8
+      vary: 
+      - Accept-Encoding,User-Agent
+      nncoection: 
+      - close
+      transfer-encoding: 
+      - chunked
+    body: <?xml version="1.0" encoding="UTF-8"?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01"><OperationRequest><HTTPHeaders><Header Name="UserAgent" Value="Jakarta Commons-HttpClient/3.0.1"></Header></HTTPHeaders><RequestId>1W322E5T0GNS3EVJ6QE5</RequestId><Arguments><Argument Name="Service" Value="AWSECommerceService"></Argument><Argument Name="Item.1.Quantity" Value="1"></Argument><Argument Name="Operation" Value="CartCreate"></Argument><Argument Name="Version" Value="2011-08-01"></Argument><Argument Name="Timestamp" Value="2011-07-29T18:55:58Z"></Argument><Argument Name="AssociateTag" Value="theorydot08-20"></Argument><Argument Name="Signature" Value="Tl8LhXJEQ84qUFIL4+o1bBNZkEr5pOohFaZFHco7QUc="></Argument><Argument Name="Item.1.OfferListingId" Value="foobar"></Argument><Argument Name="AWSAccessKeyId" Value="0ZVSQ33MDFPQS8H2PM02"></Argument></Arguments><RequestProcessingTime>0.04128098487854</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><OfferListingId>foobar</OfferListingId><Quantity>1</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.InternalError</Code><Message>We are unable to process your request at this time. Please retry your request.</Message></Error></Errors></Request></Cart></CartCreateResponse>
+    http_version: "1.1"
